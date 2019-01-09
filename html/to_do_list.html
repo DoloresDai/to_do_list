@@ -14,18 +14,19 @@
         </legend>
         待办事项：
         <input type="text" name="items" class="items" required autofocus="" placeholder="请添加待办事项"/>
-        <input type="button" value="删除" class="delete"/>
-        <label for="active">
+        <input type="button" value="删除" class="delete" />
+        <label for="all">
           All
         </label>
-        <input type="radio" name="status" checked="checked"  />
+        <input type="radio" name="status" checked="checked" class="all"/>
         <label for="active">
           Active
         </label>
-        <input type="radio" name="status"  />
-        <label for="active">
+        <input type="radio" name="status" class="active"/>
+        <label for="complete">
           Complete
         </label>
+        <input type="radio" name="status" class="complete"/>
       </fieldset>
     </form>
     <script type="text/javascript" src="../js/to_do_list.js">
