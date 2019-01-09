@@ -34,3 +34,7 @@ fieldset {
   color: #FFE4E1;
   display: none;
 }
+
+li {
+  display: none;
+}
