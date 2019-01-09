@@ -31,3 +31,7 @@ function readItems() {
     list[j].innerHTML = value[j];
   }
 }
+
+function deleteItems() {
+  window.localStorage.removeItem(".list[j]");
+}
