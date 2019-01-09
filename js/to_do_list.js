@@ -35,3 +35,7 @@ function readItems() {
 function deleteItems() {
   window.localStorage.removeItem(".list[j]");
 }
+
+function clearItems() {
+  window.localStorage.clear();
+}
