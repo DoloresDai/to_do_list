@@ -20,3 +20,14 @@ function save() {
     window.localStorage.setItem("data" + i, items);
   }
 }
+
+function readItems() {
+  var value = [];
+  var list = [];
+  for (let j = 0; j < sum; j++) {
+    var keys = window.localStorage.key(j);
+    value[j] = window.localStorage.getItem(keys);
+    var list[j] = document.getElementByClassName(".list[j]");
+    list[j].innerHTML = value[j];
+  }
+}
