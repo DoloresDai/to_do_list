@@ -1,30 +1,62 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  font-family: 'Trocchi', serif;
+  margin: 10px auto;
+  color:#8D4E96;
+  font-size: 20px;
 }
 
-form {
+body {
   width: 600px;
-  margin: 20px auto;
+  background-color: #E0CDE2;
+  margin: 0px auto;
 }
 
-fieldset {
-  padding: 10px;
-}
+header {
 
-.items {
-  width: 100%;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 48px;
+  background-color: #E8DBEA;
+  width: 300px;
+  text-align: center;
+  border: 1px solid #E8DBEA;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+content {
+  width: 600px;
+  height: 300px;
+  display: block;
+  background-color:#E8DBEA;
+  padding-top:15px;
+  border-radius: 30px;
+}
+.input {
+  width: 500px;
   height: 40px;
-  line-height: 40px;
-  margin: 10px 0px;
   border: none;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 20px;
-  padding-left: 5px;
+  border-radius: 14px;
+  padding-left: 15px;
   box-sizing: border-box;
+  outline: none;
+  margin: 20px auto;
+  display: block;
 }
+button {
+  width: 100px;
+  height: 40px;
+  background-color:#8D4E96;
+  color:#E8DBEA;
+  font-weight: bold;
+  margin: 0px 5px 0px 20px;
+  border-radius: 14px;
+  outline: none;
 
+}
+button:hover {
+background-color:#9961A1;
+}
 .delete {
   width: 60px;
   display: block;
@@ -34,8 +66,23 @@ fieldset {
   color: #FFE4E1;
   display: none;
 }
-
-li {
-  display: none;
+.left_items {
+  float: right;
+  margin-right: 40px;
 }
-
+ul {
+  padding-right: 40px;
+  list-style-image: url(../images/to_do.png);
+}
+.done_ul {
+  list-style-image: url(../images/done.png);
+}
+li {
+  border-bottom: 1px dashed #FFFFFF;
+  color: #9961A1;
+  background-image: url("") no-repeat 2px;
+}
+.line_through {
+  list-style: none;
+  text-decoration:line-through;
+}
