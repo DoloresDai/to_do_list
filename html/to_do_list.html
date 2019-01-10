@@ -5,52 +5,34 @@
       To Do List
     </title>
     <link rel="stylesheet" type="text/css" href="../css/to_do_list.css"/>
+    <style type="text/css">
+    </style>
   </head>
   <body>
-    <form action="">
-      <fieldset>
-        <legend>
-          To Do List
-        </legend>
-        待办事项：
-        <input type="text" name="items" class="items" required autofocus="" placeholder="请添加待办事项"/>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <input type="button" value="删除" class="delete"/>
-        <label for="all">
-          All
-        </label>
-        <input type="radio" name="status" checked="checked" class="all"/>
-        <label for="active">
-          Active
-        </label>
-        <input type="radio" name="status" class="active"/>
-        <label for="complete">
-          Complete
-        </label>
-        <input type="radio" name="status" class="complete"/>
-        <p>
-          Left items:
-        </p>
-        <p class="sum"></p>
-      </fieldset>
-    </form>
+    <header>
+      To Do List
+    </header>
+    <content>
+      <input type="text" class="input" placeholder="Please write there and press Enter to add"/>
+      <ul>
+      </ul>
+    </content>
+    <footer>
+      <button class="all">
+        All
+      </button>
+      <button class="active">
+        Active
+      </button>
+      <button class="complete">
+        Complete
+      </button>
+      <span class="left_items">
+        Left items:
+        <span class="sum">0</span>
+      </span>
+    </footer>
     <script type="text/javascript" src="../js/to_do_list.js">
-    </script>
+        </script>
   </body>
 </html>
