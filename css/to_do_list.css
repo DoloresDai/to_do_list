@@ -25,13 +25,14 @@ header {
 }
 content {
   width: 600px;
-  height: 300px;
+min-height: 400px;
   display: block;
   background-color:#E8DBEA;
   padding-top:15px;
   border-radius: 30px;
+  box-sizing: content-box;
 }
-.input {
+#input {
   width: 500px;
   height: 40px;
   border: none;
@@ -43,7 +44,7 @@ content {
   margin: 20px auto;
   display: block;
 }
-button {
+footer button {
   width: 100px;
   height: 40px;
   background-color:#8D4E96;
@@ -52,37 +53,54 @@ button {
   margin: 0px 5px 0px 20px;
   border-radius: 14px;
   outline: none;
-
 }
-button:hover {
+footer button:hover, .click {
 background-color:#9961A1;
 }
-.delete {
+/*.delete {
   width: 60px;
   display: block;
   padding: 5px 15px;
   border-radius: 10px;
   background-color: #FF4500;
   color: #FFE4E1;
-  display: none;
-}
+
+}*/
 .left_items {
   float: right;
   margin-right: 40px;
 }
 ul {
   padding-right: 40px;
-  list-style-image: url(../images/to_do.png);
 }
-.done_ul {
-  list-style-image: url(../images/done.png);
-}
+
 li {
   border-bottom: 1px dashed #FFFFFF;
   color: #9961A1;
-  background-image: url("") no-repeat 2px;
+  list-style-image: url(../images/to_do.png);
+  position: relative;
 }
+li button {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  bottom: 0px;
+  width: 20px;
+  height: 20px;
+  margin: auto 0px;
+  margin-bottom: 5px;
+  outline: none;
+  background-image: url(../images/delete.png);
+  border: none;
+  background-color: #E8DBEA;
+}
+li:hover button {
+  display: block;
+}
+
 .line_through {
   list-style: none;
   text-decoration:line-through;
+  list-style-image: url(../images/done.png);
 }
