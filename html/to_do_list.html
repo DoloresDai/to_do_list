@@ -13,17 +13,21 @@
       To Do List
     </header>
     <content>
-      <input type="text" id="input" placeholder="Please write there and press Enter to add"  />
-      <ul id="ul"></ul>
+      <input type="text" id="input" placeholder="Please write there and press Enter to add"  onclick="isEnter(event)" />
+      <ul id="ul">
+        <li><button ></button></li>
+        <li style="display: none"><button ></button></li>
+        <li><button ></button></li>
+      </ul>
     </content>
     <footer>
-      <button class="all">
+      <button  onclick="switchState('all')">
         All
       </button>
-      <button class="active">
+      <button  onclick="switchState('active')">
         Active
       </button>
-      <button class="complete">
+      <button  onclick="switchState('complete')">
         Complete
       </button>
       <span class="left_items">
@@ -33,7 +37,11 @@
         </span>
       </span>
     </footer>
-    <script type="text/javascript" src="../js/to_do_list.js">
+    <script type="text/javascript" src="../js/items.js">
+    </script>
+    <script type="text/javascript" src="../js/main.js">
+  </script>
+    <script type="text/javascript" src="../js/local_storage.js">
     </script>
   </body>
 </html>
