@@ -1,16 +1,8 @@
-class Items {
-  constructor(value, completed, deleted) {
-    this.value = value;
-    this.completed = completed || false;
-    this.deleted = deleted || false;
-  }
-  loadItems(storage) {}
-}
 class Storage {
   constructor() {
     this.storage = window.localStorage;
   }
-  setStorage(items) {
+  setStorage(itemsObj) {
     this.storage.setItem(`${items}.value`, JSON.stringify(items));
   }
   getAll() {
@@ -27,16 +19,3 @@ class Storage {
   }
   getCompletedItems() {}
 }
-
-function my$(class_name) {
-  return document.getElementsByClassName(class_name);
-}
-
-function enterInput(event) {
-  let value = my$("input").value;
-  if (event.keyCode === 13 && value) {
-    value = "";
-  }
-}
-let storage = new Storage();
-window.onload = function() {}
